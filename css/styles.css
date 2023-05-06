@@ -55,7 +55,9 @@ p {
   padding: 0.5em;
   color: white;
   background-color: rgb(31, 29, 29);
-  width: 100vw;
+  width: 98vw;
+  height: 9rem;
+  margin-left: 0.1em;
   border-bottom: 5px solid greenyellow;
 }
 .header__nav {
@@ -167,7 +169,8 @@ p {
 /* ---------------------------------------------------------- FOOTER ------------------------------------------------- */
 /* Define el color del título del footer */
 .footer {
-  width: 100vw;
+  width: 98vw;
+  margin-left: 0.1em;
   color: white;
   background-color: rgb(31, 29, 29);
   border-top: 5px solid greenyellow;
@@ -260,7 +263,7 @@ p {
 /* ---------------------------------------------------------- INDEX ------------------------------------------------- */
 .index-main__seccioncarousel {
   /* Sección carousel */
-  width: 100vw;
+  width: 98vw;
   margin: 1vw 0vw;
   background-color: white;
   font-size: 1.5rem;
@@ -285,12 +288,12 @@ p {
 }
 .index-main__seccioncarousel .carousel-item .container .carousel-caption h2 {
   color: rgb(158, 52, 13);
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: bold;
 }
 .index-main__seccioncarousel .carousel-item .container .carousel-caption p {
   color: black;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 .index-main__seccioncarousel .carousel-control-prev-icon {
@@ -481,6 +484,11 @@ p {
   font-weight: bold;
   color: black;
 }
+.producto-main__descripcion .card1 {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+}
 .producto-main__caracteristicas {
   /* Segunda parte - Sección características del producto */
   display: flex;
@@ -564,10 +572,10 @@ p {
 }
 .producto-main__modulos .accordion-body {
   display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: flex-start;
-  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 @keyframes titulo-producto {
@@ -671,6 +679,13 @@ p {
   }
   .producto-main__caracteristicas-contenedor {
     margin: 0 1em 1.5em 2em;
+  }
+  .producto-main__modulos .accordion-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
   }
 }
 /* -------------------------------------------------------- SERVICIOS ------------------------------------------------ */

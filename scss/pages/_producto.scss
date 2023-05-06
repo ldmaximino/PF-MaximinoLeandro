@@ -35,6 +35,12 @@
             font-weight: bold;
             color: $fontcolor5;
         }
+
+        .card1 {
+            width:50px;
+            height:50px;
+            background-color: blue;
+        }
     }
 
     &__caracteristicas {
@@ -128,8 +134,8 @@
         }
 
         .accordion-body {
-            @include flex(row,left,flex-start);
-            text-align: left;
+            @include flex(column,center,center);
+            text-align: center;
         }
     }
 }
@@ -256,5 +262,13 @@
 
     .producto-main__caracteristicas-contenedor {
         margin: 0 1em 1.5em 2em;
+    }
+
+    .producto-main__modulos {
+
+        .accordion-body {
+            @include flex(row,left,flex-start);
+            text-align: left;
+        }
     }
 }
