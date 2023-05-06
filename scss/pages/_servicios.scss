@@ -1,0 +1,71 @@
+/* -------------------------------------------------------- SERVICIOS ------------------------------------------------ */
+/* Define formato título principal servicios */
+.servicios__seccion {
+    padding: 0.5em;
+
+    &-titulo {
+        color: $fontcolor17;
+        font-size: 2.5rem;
+        font-family: $fontfam3;
+        text-align: center;
+    }
+
+    .servicios__contenedor {
+        margin-top: 2em;
+
+        .figure-img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .servicios__titulo-secundario {
+            padding: 1em 0 0 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $fontcolor20;
+        }
+
+        .servicios__articulo-texto {
+            font-size: 1rem;
+            color: $fontcolor21;
+        }
+    }
+
+    &-it {
+        background-image: linear-gradient(to top,rgba(149, 238, 142, 0.256),white);
+    }
+}
+
+/* Aplica media querys para formato Tablet de SERVICIOS desde 650px a 991px */
+@media (min-width:650px) and (max-width:991px) {
+
+    .servicios__contenedor {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: auto;
+        max-width: 991px;
+
+        .servicios__seccion-it {
+            grid: row 2/ 3;
+            @include flex(column,space-evenly,left);
+            padding-left: 0.5em;
+        }
+    }
+}
+
+/* Aplica media querys para formato Desktop de SERVICIOS desde 992px en adelante */
+@media (min-width:992px) {
+
+    .servicios__contenedor {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: auto;
+        max-width: 1200px;
+
+        .servicios__seccion-it {
+            grid: row 2/ 3;
+            @include flex(column,space-evenly,left);
+            padding-left: 0.5em;
+        }
+    }
+}

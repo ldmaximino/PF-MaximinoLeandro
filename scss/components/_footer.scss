@@ -1,0 +1,111 @@
+/* ---------------------------------------------------------- FOOTER ------------------------------------------------- */
+/* Define el color del título del footer */
+.footer {
+    width: 100vw;
+    color: $fontcolor4;
+    background-color:$fontcolor9;
+    border-top: 5px solid $fontcolor3;
+
+    &__titulo {
+        display: flex;
+        padding: 0.5em 0 0 0.5em;
+        align-items: center;
+        text-align: center;
+
+        &-icon {
+            background-color:$fontcolor9;
+            min-width: 80px;
+            height: 80px;
+            justify-content: center;
+            align-items: center;
+
+            & i {
+                font-size: 3em;
+            }
+        }
+
+        &-texto {
+            font-size: 1.2rem;
+            color: $fontcolor3;
+            padding: 0.5em;
+        }
+    }
+
+    &__contacto-texto {
+        padding: 0 0 0.5em 3em;
+        font-size: 1rem;
+    }
+
+    &__contacto-lista {
+        display: flex;
+        flex-direction: column;
+        padding-left: 3em;
+        gap: 0.3em;
+    }
+
+    &__nav {
+        padding: 0 0.5em 0 0;
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+
+        .footer-nav__list {
+            padding: 1em 1em 0 0;
+            font-size: 0.8rem;
+            gap: 15px;
+
+            & a {
+                font-size: 1rem;
+            }
+
+            & .activo a {
+                color: $fontcolor3;
+            }
+        }
+    }
+
+    &__derechos {
+        padding: 0.5em 0 1em 4em;
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: $fontcolor4;
+    }
+}
+
+/* Aplica media querys para formato Tablet del FOOTER desde los 650px a 1199px */
+@media (min-width:650px) and (max-width:1199px) {
+    /* Define sección Footer */
+
+    .footer__contacto-lista {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer__nav {
+        padding: 0 0.5em 0 0;
+
+        .footer-nav__list {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+/* Aplica media querys para formato Tablet del FOOTER desde los 1200px */
+@media (min-width:1200px) {
+
+    /* Define sección Footer */
+    .footer__contacto-lista {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer__nav {
+        padding: 0 0.5em 0 0;
+
+        .footer-nav__list {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

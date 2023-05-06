@@ -1,0 +1,260 @@
+/* ---------------------------------------------------------- PRODUCTOS ---------------------------------------------- */
+.producto-main {
+
+    &__descripcion {
+        /* Primer parte - Sección descripción del producto */
+        width: 100%;
+        padding: 1em 2em;
+        text-align: center;
+        line-height: 2em;
+        background-color: $fontcolor4;
+        font-family: $fontfam1;
+        font-size: 0.9rem;
+        color: $fontcolor7;
+        background-image:radial-gradient(circle,rgba(255, 166, 0, 0.268),$fontcolor4);
+
+        &-titulo {
+            /* Titulo Descripción Producto */
+            display:inline-block;
+            padding: 0.2em 1em;
+            border-radius: 10px;
+            font-family: $fontfam1;
+            font-weight: 800;
+            font-size: 2.5rem;
+            color: $fontcolor4;
+            background-color: $fontcolor1;
+            line-height: 1.8em;
+            animation-name:titulo-producto;
+            animation-iteration-count: infinite;
+            animation-duration: 15s;
+            animation-timing-function: linear;
+        }
+
+        &-pie {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: $fontcolor5;
+        }
+    }
+
+    &__caracteristicas {
+        /* Segunda parte - Sección características del producto */
+        display: flex;
+        @include flex(row,space-evenly,center);
+        flex-wrap: wrap;
+        gap: 20px;
+
+        &-contenedor {
+            width: 95%;
+            padding: 1em 0em 2em 0em;
+            margin: 0 0.8em 0.8em 0.8em;
+            background-image: url("../img/fondoproducto.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    &__articulos-producto {
+        /* Define formato artículos producto */
+        width: 23em;
+        height: 15em;
+        padding: 1em;
+        background-color: $fontcolor4;
+        border: 0.1em solid $fontcolor5;
+        border-radius: 10px;
+        display: flex;
+        align-items: flex-start;
+        text-align: justify;
+        animation-name:articulos-producto;
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        animation-timing-function: linear;
+    }
+
+    &__articulos-img {
+        flex-direction: row;
+        align-items: flex-start;
+        min-width: 6em;
+    }
+
+
+    &__articulos-texto {
+
+        /* Define formato títulos producto */
+        & h3 {
+            padding: 0 0 0 0.5em;
+            font-size: 1.7rem;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        & p {
+            padding: 1em 0 0 0.5em;
+            font-size: 1rem;
+            font-weight: 200;
+            text-align: left;
+        }
+    }
+
+    &__modulos {
+        /* Tercer parte - Sección módulos del producto */
+        width: 100%;
+        padding: 1em 2em;
+        text-align: center;
+        line-height: 2em;
+        background-color: $fontcolor4;
+
+        &-titulo {
+            /* Titulo Módulos Producto */
+            display:inline-block;
+            font-family: $fontfam1;
+            font-weight: 800;
+            font-size: 1.5rem;
+        }
+
+        &-img {
+            padding:0.5em;
+        }
+
+        .accordion-button {
+            background-color:$fontcolor22;
+            color:$fontcolor5;
+            font-family: $fontfam4;
+            font-weight: bold;
+        }
+
+        .collapsed {
+            background-color:$fontcolor23;
+        }
+
+        .accordion-body {
+            @include flex(row,left,flex-start);
+            text-align: left;
+        }
+    }
+}
+
+@keyframes titulo-producto {
+    0% {
+        transform:rotateY(0deg);
+        background-image:linear-gradient(to right,$fontcolor1 5% ,$fontcolor2  95%);
+        opacity:1;
+    }
+
+    10% {
+        transform:rotateY(36deg);
+        background-image:linear-gradient(to right,$fontcolor1 15% ,$fontcolor2  85%);
+        opacity:0.9;
+    }
+
+    20% {
+        transform:rotateY(72deg);
+        background-image:linear-gradient(to right,$fontcolor1 25% ,$fontcolor2  75%);
+        opacity:0.8;
+    }
+
+    30% {
+        transform:rotateY(108deg);
+        background-image:linear-gradient(to right,$fontcolor1 35% ,$fontcolor2  65%);
+        opacity:0.7;
+    }
+
+    40% {
+        transform:rotateY(144deg);
+        background-image:linear-gradient(to right,$fontcolor1 45% ,$fontcolor2  55%);
+        opacity:0.6;
+    }
+
+    50% {
+        transform:rotateY(180deg);
+        background-image:linear-gradient(to right,$fontcolor1 55% ,$fontcolor2  45%);
+        opacity:0.5;
+    }
+
+    60% {
+        transform:rotateY(216deg);
+        background-image:linear-gradient(to right,$fontcolor1 65% ,$fontcolor2  35%);
+        opacity:0.6;
+    }
+
+    70% {
+        transform:rotateY(252deg);
+        background-image:linear-gradient(to right,$fontcolor1 75% ,$fontcolor2   25%);
+        opacity:0.7;
+    }
+
+    80% {
+        transform:rotateY(288deg);
+        background-image:linear-gradient(to right,$fontcolor1 85% ,$fontcolor2  15%);
+        opacity:0.8;
+    }
+
+    90% {
+        transform:rotateY(324deg);
+        background-image:linear-gradient(to right,$fontcolor1 95% ,$fontcolor2  5%);
+        opacity:0.9;
+    }
+
+    100% {
+        transform:rotateY(360deg);
+        background-image:linear-gradient(to right,$fontcolor1 0% ,$fontcolor2  100%);
+        opacity:1;
+    }
+}
+
+@keyframes articulos-producto {
+    0% {
+        transform:rotateY(-5deg);
+    }
+
+    15% {
+        transform:rotateY(-10deg);
+    }
+
+    30% {
+        transform:rotateY(-5deg);
+    }
+    45% {
+        transform:rotateY(0deg);
+    }
+
+    60% {
+        transform:rotateY(5deg);
+    }
+
+    75% {
+        transform:rotateY(10deg);
+    }
+
+    90% {
+        transform:rotateY(5deg);
+    }
+
+    100% {
+        transform:rotateY(0deg);
+    }
+}
+
+/* Aplica media querys para formato Tablet PRODUCTOS desde 650px a 1199px */
+@media (min-width:650px) and (max-width:1199px) {
+    .producto-main__descripcion {
+        max-width: 990px;
+        margin: 0 0 1.5em 1em;
+    }
+
+    .producto-main__caracteristicas-contenedor {
+        max-width: 990px;
+        margin: 0 0 1.5em 1em;
+    }
+}
+
+/* Aplica media querys para formato Tablet PRODUCTOS desde 1200px */
+@media (min-width:1200px) {
+    .producto-main__descripcion {
+        margin: 0 2em 1.5em 0;
+    }
+
+    .producto-main__caracteristicas-contenedor {
+        margin: 0 1em 1.5em 2em;
+    }
+}

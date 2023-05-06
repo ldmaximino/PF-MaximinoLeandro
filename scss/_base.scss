@@ -1,0 +1,82 @@
+/* ---------------------------------------------------- COMUNES A TODOS --------------------------------------------- */
+/* Borra margen y padding de todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define variables font-family */
+$fontfam1: 'Open Sans', sans-serif;
+$fontfam2: 'Montserrat', sans-serif;
+$fontfam3: 'Georgia', 'Times New Roman', Times, serif;
+$fontfam4: Arial, Helvetica, sans-serif;
+
+/* Define variables colores */
+$fontcolor1:rgba(255, 166, 0, 0.541);
+$fontcolor2:rgb(255, 179, 0);
+$fontcolor3:greenyellow;
+$fontcolor4:white;
+$fontcolor5:black;
+$fontcolor6:bisque;
+$fontcolor7:gray;
+$fontcolor8:whitesmoke;
+$fontcolor9:rgb(31,29,29);
+$fontcolor10:rgb(130, 255, 47);
+$fontcolor11:rgba(13, 13, 119, 0.596);
+$fontcolor12: rgba(172, 255, 47, 0.418);
+$fontcolor13:rgba(92, 121, 97, 0.623);
+$fontcolor14:rgb(220, 230, 222);
+$fontcolor15:rgba(172, 255, 47, 0.767);
+$fontcolor16:rgb(158, 52, 13);
+$fontcolor17:rgb(78, 75, 75);
+$fontcolor18:rgb(128, 125, 125);
+$fontcolor19:rgb(238, 238, 238);
+$fontcolor20:rgb(104, 101, 101);
+$fontcolor21:rgb(110, 108, 108);
+$fontcolor22:rgb(220, 174, 106);
+$fontcolor23:rgb(198, 186, 168);
+
+ul,
+ol {
+    list-style-type: none;
+    padding: 0em;
+    padding-right: 1em;
+    margin:0;
+}
+
+/* Quita subrayados a los links y le asigna color */
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 0.9em;
+    font-family: $fontfam4;
+    transition-property: background-color color border-radius padding;
+    transition-duration: 600ms;
+
+    &:hover {
+        padding: 0.2em;
+        background-color: $fontcolor10;
+        opacity:0.4;
+        border-radius: 3px;
+        color: black;
+    }
+}
+
+p {
+    margin-bottom:0;
+}
+
+.activo {
+    padding: 0.1em;
+    font-weight: 400;
+    color:$fontcolor3;
+}
+
+/* Mixin */
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

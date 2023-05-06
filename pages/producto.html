@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos -->
+    <meta name="author" content="Leandro D Maximino">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”robots” content=”index,follow”>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../img/icono.png">
+
+    <!-- Meta Tags -->
+    <title>Software para Concesionarios Automotores, Agromotores y Motovehículos</title>
+    <meta name="title" content="Software para Concesionarios Automotores, Agromotores y Motovehículos">
+    <meta name="description"
+        content="Con Automax vas a poder controlar la gestión de todo el concesionario con desarrolado con la última tecnología y un excelente grupo de profesionales que estará a tu disposición cuando los necesites.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ldmaximino.github.io/PreEntrega3-MaximinoLeandro/pages/producto.html">
+    <meta property="og:title" content="Software para Concesionarios Automotores, Agromotores y Motovehículos">
+    <meta property="og:description"
+        content="Con Automax vas a poder controlar la gestión de todo el concesionario con desarrolado con la última tecnología y un excelente grupo de profesionales que estará a tu disposición cuando los necesites.">
+    <meta property="og:image"
+        content="https://w7.pngwing.com/pngs/226/716/png-transparent-automax-of-indiana-logo-car-interjet-jaguar-animals-text-logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ldmaximino.github.io/PreEntrega3-MaximinoLeandro/pages/producto.html">
+    <meta property="twitter:title" content="Software para Concesionarios Automotores, Agromotores y Motovehículos">
+    <meta property="twitter:description"
+        content="Con Automax vas a poder controlar la gestión de todo el concesionario con desarrolado con la última tecnología y un excelente grupo de profesionales que estará a tu disposición cuando los necesites.">
+    <meta property="twitter:image"
+        content="https://w7.pngwing.com/pngs/226/716/png-transparent-automax-of-indiana-logo-car-interjet-jaguar-animals-text-logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:ital@1&display=swap"
+        rel="stylesheet">
+    <!-- Icons Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__img">
+            <img src="../img/logoautomax.png" alt="Logo AutoMax">
+        </div>
+
+        <nav class="header__nav">
+            <ul class="header-nav__list">
+                <li class="item-nav"><a href="../index.html">Inicio</a></li>
+                <li class="item-nav"><a class="activo" href="../pages/producto.html">Producto</a></li>
+                <li class="item-nav"><a href="../pages/servicios.html">Servicios</a></li>
+                <li class="item-nav"><a href="../pages/novedades.html">Novedades</a></li>
+                <li class="item-nav"><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <nav class="navbar navbar-dark fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar">
+                    <div class="offcanvas-header">
+                        <img src="../img/imgmenu.png" alt="Icono Automax">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link activo" href="../pages/producto.html">Producto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/novedades.html">Novedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="producto-main__descripcion">
+            <h2 class="producto-main__descripcion-titulo">AutoMax</h2>
+            <div>
+                <p>DMS AutoMax es una poderosa herramienta de administración integral
+                    desarrollada con tecnología de última
+                    generación, para proveer soluciones a empresas del rubro automotriz, maquinarias agrícolas,
+                    motovehículos, venta de stock y talleres de servicio.
+                    Altamente flexible y parametrizable y por sobre todas las cosas amigable y fácil de operar, ofrece
+                    la
+                    galería de funcionalidades más completa del mercado, sumando el know how de más de 200 clientes que
+                    lo
+                    implementaron a lo largo de 25 años.
+                    Si tiene intención de ordenar su empresa para que sea cada día más eficiente, bajar sus costos
+                    operativos, tener control sobre sus ventas y además disminuir significativamente sus gastos de
+                    mantenimiento de software, respaldado por una empresa líder en el desarrollo de sistemas integrados
+                    para
+                    concesionarios.</p>
+                <span class="producto-main__descripcion-pie">AutoMax es la opción.</span>
+            </div>
+        </section>
+
+        <section class="producto-main__caracteristicas-contenedor">
+            <h2>_</h2>
+            <div class="producto-main__caracteristicas">
+                <article class="producto-main__articulos-producto">
+                    <div class="producto-main__articulos-img">
+                        <img src="../img/funcionalidad.png" alt="Funcionalidad">
+                    </div>
+                    <div class="producto-main__articulos-texto">
+                        <h3>Funcionalidad</h3>
+                        <p>Se integra con dispositivos móviles brindando respuestas ágiles y
+                            dinámicas, permite alertas y
+                            notificaciones automáticas vía mail y SMS, y ofrece amplias posibiidades de formatos de
+                            exportación.</p>
+                        <p> </p>
+                    </div>
+                </article>
+                <article class="producto-main__articulos-producto">
+                    <div class="producto-main__articulos-img">
+                        <img src="../img/flexibilidad.png" alt="Flexibilidad">
+                    </div>
+                    <div class="producto-main__articulos-texto">
+                        <h3>Flexibilidad</h3>
+                        <p>Permite trabajar con múltiples empresas y marcas. Se adapta a
+                            estructuras
+                            sencillas y más complejas
+                            con sucursales y centros de servicio interconectados. Es ampliamente configurable.</p>
+                        <p> </p>
+                    </div>
+                </article>
+                <article class="producto-main__articulos-producto">
+                    <div class="producto-main__articulos-img">
+                        <img src="../img/integridadmod.png" alt="Integridad Modular">
+                    </div>
+                    <div class="producto-main__articulos-texto">
+                        <h3>Integridad Modular</h3>
+                        <p>Todos sus módulos están totalmente integrados para proveer información en tiempo real sin
+                            duplicaciones de carga.</p>
+                        <p> </p>
+                    </div>
+                </article>
+                <article class="producto-main__articulos-producto">
+                    <div class="producto-main__articulos-img">
+                        <img src="../img/control.png" alt="Control">
+                    </div>
+                    <div class="producto-main__articulos-texto">
+                        <h3>Control</h3>
+                        <p>Provee todas las herramientas necesarias para tomar las mejores
+                            decisiones
+                            al momento de vender.</p>
+                        <p> </p>
+                    </div>
+                </article>
+                <article class="producto-main__articulos-producto">
+                    <div class="producto-main__articulos-img">
+                        <img src="../img/practicidad.png" alt="Practicidad y Eficiencia">
+                    </div>
+                    <div class="producto-main__articulos-texto">
+                        <h3>Practicidad y Eficiencia</h3>
+                        <p>Posibilita tener una visión de cada área de la empresa para realizar
+                            el
+                            seguimiento de sus gastos, a
+                            fin de reducir costos operativos.</p>
+                        <p> </p>
+                    </div>
+                </article>
+                <article class="producto-main__articulos-producto">
+                    <div class="producto-main__articulos-img">
+                        <img src="../img/seguridad.png" alt="Seguridad">
+                    </div>
+                    <div class="producto-main__articulos-texto">
+                        <h3>Seguridad</h3>
+                        <p>Está garantizada por un sistema de protección avanzado mediante
+                            niveles de
+                            acceso por cada usuario.</p>
+                        <p> </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="producto-main__modulos">
+            <h2 class="producto-main__modulos-titulo">AutoMax está construído con los siguientes módulos</h2>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Venta de Unidades
+                        </button>
+                    </h3>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="producto-main__modulos-img">
+                                <img src="../img/modventas.png" alt="Venta de Unidades">
+                            </div>
+                            <div>
+                                El módulo de Ventas permite realizar el seguimiento del stock de unidades nuevas,
+                                vehículos usados y rodados (pedidos, reservas, asignaciones, consignaciones, ventas
+                                directas, entregas, transferencias, patentamientos, entradas al taller, pagos,
+                                facturación, costos, gastos, bonificaciones, etc.).
+                                Monitorear las unidades que se encuentran en proceso de producción.
+                                Registrar las operaciones de venta con detalle de la financiación acordada con el
+                                cliente.
+                                Hacer el seguimiento de las financiaciones.
+                                Establecer una agenda de turnos para ordenar la preparación y entrega de los vehículos.
+                                Controlar las entregas a través de distintos niveles de autorización.
+                                Asignar formularios de gestoría a los vehículos y llevar un control sobre los mismos.
+                                Llevar una cuenta corriente por los trámites de gestoría realizados.
+                                Liquidar comisiones a vendedores.
+                                Registrar cuestionarios de satisfacción y analizar los resultados logrados.
+                                Obtener la rentabilidad del sector por cada una de las operaciones.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Plan de Ahorro
+                        </button>
+                    </h3>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="producto-main__modulos-img">
+                                <img src="../img/modplanahorro.png" alt="Planes de Ahorro">
+                            </div>
+                            <div>
+                                El módulo de Plan de Ahorro posibilita el control de la cartera de planes propios y de
+                                clientes, con detalle de las suscripciones, agrupamientos, adjudicaciones,
+                                transferencias, renuncias y rescinciones.
+                                Asignación de formularios a vendedores.
+                                Documentación y seguimiento de scoring realizados.
+                                Facturación de incentivos, comisiones y honorarios.
+                                Liquidación de comisiones a vendedores.
+                                Además, al estar relacionado con los módulos de Tesorería y Compras, permite llevar la
+                                cuenta corriente de cada contrato, contemplando la cobranza de la primera cuota,
+                                registración de débitos y créditos, confección de memos de pagos de cuotas, recepción de
+                                fondos para licitaciones, etc.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Proveedores
+                        </button>
+                    </h3>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="producto-main__modulos-img">
+                                <img src="../img/modcompras.png" alt="Proveedores">
+                            </div>
+                            <div>
+                                El módulo de Compras incluye todos los movimientos necesarios para
+                                monitorear las cuentas corrientes con los proveedores y poder hacer un análisis de
+                                vencimientos y pagos.
+                                Es necesario en el control de gastos de los diferentes sectores de la empresa.
+                                Permite registrar todos los comprobantes emitidos por un proveedor (de mercadería,
+                                conceptos
+                                o servicios) y en particular la compra de unidades 0km, vehículos usados y repuestos,
+                                generando sus respectivos informes de stock contables.
+                                También posibilita asociarle gastos y bonificaciones a los vehículos, registrar débitos
+                                y
+                                créditos en planes de clientes, etc.
+                                En facturas de vehículos vincula automáticamente los impuestos internos para
+                                trasladarlos a
+                                la facturación.
+                                Permite visualizar informes resumidos y detallados de cuentas corrientes, informes de
+                                pagos
+                                efectuados, informes de anticipos pendientes de imputar, etc.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            Contabilidad
+                        </button>
+                    </h3>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="producto-main__modulos-img">
+                                <img src="../img/modcontabilidad.png" alt="Contabilidad">
+                            </div>
+                            <div>
+                                Todos los movimientos de la empresa son registrados de manera automática y en tiempo
+                                real en la contabilidad para poder obtener información financiera al día, sin la
+                                necesidad de algún pasaje contable adicional.
+                                Permite definir un plan de cuentas de estructura jerárquica flexible de acuerdo a la
+                                necesidad del usuario.
+                                Mediante la aplicación de centros de costo posibilita la imputación diferenciada por
+                                unidad de negocio.
+                                Facilita la carga de asientos que se repiten periódicamente mediante la creación de
+                                plantillas.
+                                El contador cuenta con todos los libros contables, informes y exportaciones a otros
+                                aplicativos (como SIAP) para poder ahorrar muchísimo tiempo en su estudio (libro diario
+                                y subdiario, libro mayor, balance general, libro de IVA ventas y compras, retenciones y
+                                percepciones recibidas, retenciones y percepciones efectuadas, Ingresos Brutos, etc.).
+                                Los procesos contables pueden ser conciliados de forma muy sencilla.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                            Laboratorio Comercial
+                        </button>
+                    </h3>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="producto-main__modulos-img">
+                                <img src="../img/modcomercial.png" alt="Laboratorio Comercial">
+                            </div>
+                            <div>
+                                El módulo de Laboratorio Comercial es un sistema de CRM (gestión de relación con
+                                clientes) totalmente integrado.
+                                Permite volcar la mayor cantidad de datos de los clientes y de las necesidades de estos,
+                                conduciendo a la satisfacción y retención de los mismos y a mejorar la calidad en la
+                                atención.
+                                Programar contactos próximos con clientes actuales y potenciales.
+                                Registrar contactos surgidos de eventos para su posterior asignación a vendedores.
+                                Aplicar diferentes perfiles a los usuarios para que el acceso a los contactos sea
+                                personalizado.
+                                Cada vendedor puede hacer el seguimiento de sus contactos a través de una agenda,
+                                establecer prospecciones, y con el conocimiento de las demandas poder adelantar una
+                                oferta y concretar un negocio.
+                                Posibilita obtener la información detallada de los contactos seleccionándolos por
+                                profesión o actividad, sexo, edad, cantidad de hijos, etc.
+                                Permite verificar el porcentaje de cumplimiento de las tareas programadas para cada
+                                vendedor.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            Repuestos
+                        </button>
+                    </h3>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="producto-main__modulos-img">
+                                <img src="../img/modrepuestos.png" alt="Repuestos">
+                            </div>
+                            <div>
+                                El módulo de Repuestos posibilita ordenar la operatoria del sector, eliminando la
+                                cantidad de stock "muerto" y mejorando la disponibilidad, para hacer una gestión de
+                                pedidos mucho más eficiente evitando la pérdida de ventas.
+                                Permite el seguimiento de cada código (cantidades físicas y virtuales por depósito,
+                                reemplazos, códigos alternativos, ventas por mes, cantidades pendientes, ventas
+                                perdidas, precios, promociones y ofertas, etc.).
+                                Clasificación del stock según su rotación (vivo, durmiente, muerto). Categorización por
+                                rubros, familias, orígenes, fabricantes, códigos de descuento, etc.
+                                Valorización a costo de reposición, promedio ponderado, última compra, precio de venta,
+                                etc.
+                                Generar y registrar inventarios.
+                                Importar listas de precios.
+                                Análisis de compras y ventas.
+                                Obtener informes de la rentabilidad del sector.
+                                Presupuestos, remitos, vales de salida al taller, facturación y seguimiento de clientes.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                            aria-controls="flush-collapseSeven">
+                            Servicios
+                        </button>
+                    </h3>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="producto-main__modulos-img">
+                                <img src="../img/modservicios.png" alt="Servicios">
+                            </div>
+                            <div>
+                                El módulo de Servicios tiene la finalidad de poder controlar y administrar los
+                                recursos del taller.
+                                Permite establecer una agenda de turnos ordenada para que la distribución de tareas
+                                a los operarios sea eficiente.
+                                Controlar los tiempos facturados contra las horas invertidas.
+                                Mejorar la utilización de horas disponibles evaluando la utilización de horas en
+                                cada operario.
+                                Realizar un análisis de la rentabilidad del sector, de los trabajos realizados por
+                                terceros, en los diferentes cargos (cliente, interno, garantía, etc.).
+                                Monitorear cada vehículo desde su ingreso por primera vez (presupuestos, ordenes de
+                                reparación, facturaciones, etc.) y rastrear futuras reparaciones.
+                                Control de campañas, acreditaciones de garantía y seguimiento de retornos.
+                                Registro y análisis de cuestionarios de satisfacción.
+                                Facturación y seguimiento de clientes.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseEigth" aria-expanded="false"
+                            aria-controls="flush-collapseEigth">
+                            Tesorería
+                        </button>
+                    </h3>
+                    <div id="flush-collapseEigth" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="producto-main__modulos-img">
+                                <img src="../img/modtesoreria.png" alt="Tesorería">
+                            </div>
+                            <div>
+                                El módulo de Tesorería permite el registro diario de los movimientos de caja y
+                                bancos (recibos, órdenes de pago, canjes, transferencias entre cajas,
+                                transacciones bancarias, etc.), a fin de observar y controlar estados de cuenta
+                                y pagos de clientes, cancelaciones a proveedores, cuentas bancarias, chequeras,
+                                cheques de terceros y otros valores.
+                                Posibilita generar automáticamente los comprobantes por las retenciones
+                                practicadas en los pagos, agilizando las tareas de liquidaciones de impuestos.
+                                Administrar e imprimir cheques.
+                                Realizar conciliaciones bancarias en forma sencilla.
+                                Definir perfiles para cobranzas y pagos por cada usuario.
+                                Ofrece gran variedad de consultas y listados de los movimientos financieros:
+                                cierre y arqueo de caja, listado de composición de cheques y valores, informe de
+                                movimientos por concepto y por comprobantes, reporte de las imputaciones por
+                                cliente, etc.
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__titulo">
+            <div class="footer__titulo-icon">
+                <i class="bi bi-person-circle"></i>
+            </div>
+            <div class="footer__titulo-texto">
+                <h3> Tenés alguna inquietud o necesitás soporte técnico sobre nuestro producto?</h3>
+            </div>
+        </div>
+        <div class="footer__contacto">
+            <p class="footer__contacto-texto">Ponete en contacto con nosotros a la brevedad a través de los siguientes
+                canales :</p>
+            <div>
+                <ul class="footer__contacto-lista">
+                    <li>
+                        <a href="#" rel="noopener noreferrer">
+                            <i class="bi bi-telephone"></i>
+                            (03465) 428-3227 |
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@automax.com.ar" rel="noopener noreferrer">
+                            <i class="bi bi-envelope"></i>
+                            info@automax.com.ar |
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/home" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-twitter"></i>
+                            #Automax |
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-instagram"></i>
+                            @AutoMax
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__nav">
+            <nav>
+                <ul class="footer-nav__list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="activo"><a href="../pages/producto.html">Producto</a></li>
+                    <li><a href="../pages/servicios.html">Servicios</a></li>
+                    <li><a href="../pages/novedades.html">Novedades</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__derechos">
+            <p>2023 - &#169; AutoMax s&s. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

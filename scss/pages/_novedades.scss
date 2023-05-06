@@ -1,0 +1,156 @@
+/* -------------------------------------------------------- NOVEDADES ----------------------------------------------- */
+.novedades-main__art {
+    margin: 0.5em 1.3em 0.5em 1.3em;
+    padding: 2em 0.5em 0.5em 0.5em;
+    text-align: center;
+    line-height: 2em;
+    background-color: $fontcolor4;
+    font-family: $fontfam1;
+    font-size: 1rem;
+    color: $fontcolor7;
+
+    &-titulo {
+        color: $fontcolor17;
+        font-size: 2.5rem;
+        font-family: $fontfam3;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+}
+
+/* Sección contenedor articulos */
+.novedades-main__articulos {
+    margin: 0 1.3em 2em 1.4em;
+    padding: 1em 0.5em 1em 0.5em;
+    background-color: $fontcolor19;
+    @include flex(column,space-evenly,center);
+    font-family: $fontfam1;
+    font-size: 0.9rem;
+    line-height: 1.5em;
+    color: $fontcolor7;
+
+    /* Define título artículos */
+    &-titulo {
+        margin: 0.5em 0.7em 0 0.8em;
+        padding: 0.5em 0em;
+        color: $fontcolor4;
+        font-size: 1.5em;
+        text-align: center;
+        border: 4px solid $fontcolor19;
+        border-radius: 5px;
+
+        $color1: rgb(0, 207, 214);
+        $color2: rgb(255, 130, 0);
+        $color3: rgb(165, 223, 0);
+        $color4: rgb(0, 207, 214);
+        $color5: rgb(165, 223, 0);
+        $color6: rgb(255, 130, 0);
+        $color7: rgb(0, 207, 214);
+        $color8: rgb(165, 223, 0);
+
+        &--titulo1 {
+            background-color: $color1;
+        }
+
+        &--titulo2 {
+            background-color: $color2;
+        }
+
+        &--titulo3 {
+            background-color: $color3;
+        }
+
+        &--titulo4 {
+
+            background-color: $color4;
+        }
+
+        &--titulo5 {
+
+            background-color: $color5;
+        }
+
+        &--titulo6 {
+
+            background-color: $color6;
+        }
+
+        &--titulo7 {
+
+            background-color: $color7;
+        }
+
+        &--titulo8 {
+            background-color: $color8;
+        }
+    }
+}
+
+/* Aplica media querys para formato Tablet de NOVEDADES desde 650px a 1199px */
+@media (min-width:650px) and (max-width:1199px) {
+
+    .novedades-main__art {
+        padding: 0.5em 2.5em 1em 2.5em;
+        text-align: center;
+        line-height: 2em;
+        background-color: $fontcolor4;
+        font-family: $fontfam1;
+        font-size: 1rem;
+        color: $fontcolor7;
+
+        &-titulo {
+            color: $fontcolor17;
+            font-size: 2.5rem;
+            font-family: $fontfam3;
+            text-align: center;
+            padding-bottom: 1em;
+        }
+
+    }
+
+    /* Sección contenedor articulos */
+    .novedades-main__articulos {
+        margin: 0 2.6em 2em 2.6em;
+        padding: 1em 0.5em 0 0.5em;
+        background-color: $fontcolor19;
+        @include flex(column,space-evenly,center);
+        /* Define título artículos */
+        &-titulo {
+            margin: 1em 1.4em 0 1.4em;
+        }
+    }
+}
+
+/* Aplica media querys para formato Desktop de NOVEDADES desde 1200px en adelante */
+@media (min-width:1200px) {
+    .novedades-main__art {
+        padding: 0.5em 6em 1em 6em;
+        text-align: center;
+        line-height: 2em;
+        background-color: $fontcolor4;
+        font-family: $fontfam1;
+        font-size: 1rem;
+        color: $fontcolor7;
+
+        &-titulo {
+            color: $fontcolor17;
+            font-size: 2.5rem;
+            font-family: $fontfam3;
+            text-align: center;
+            padding-bottom: 1em;
+        }
+    }
+
+    /* Sección contenedor articulos */
+    .novedades-main__articulos {
+        margin: 0 6em 2em 6em;
+        padding: 1em 0.5em 0 0.5em;
+        background-color: $fontcolor19;
+        @include flex(row,space-evenly,justify);
+        
+        /* Define título artículos */
+        &-titulo {
+            margin: 1em 3.4em 0 3.4em;
+        }
+    }
+}

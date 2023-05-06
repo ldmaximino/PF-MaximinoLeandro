@@ -1,0 +1,124 @@
+/* ---------------------------------------------------------- HEADER ------------------------------------------------- */
+/* Define el color de fuente y color de fondo del Header*/
+.header {
+    @include flex(row,space-between,center);
+    padding: 0.5em;
+    color: $fontcolor4;
+    background-color:$fontcolor9;
+    width: 100vw;
+    border-bottom: 5px solid $fontcolor3;
+
+    &__nav {
+        @include flex(row,space-between,center);
+        display:none;    
+    }
+
+    .navbar {
+        position: static;
+        padding-right: 1em;
+
+        .offcanvas {
+            max-height: 20em;
+            margin:7.6em auto;
+
+            .offcanvas-header {
+                background-color: $fontcolor9;
+            }
+
+            .offcanvas-body {
+                background-color: $fontcolor9;
+            }
+
+            .nav-link:hover {
+                background-color:$fontcolor10;
+                color:$fontcolor5;
+            }
+        }
+    }
+
+    &__img {
+        /* Tamaño Logo */
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 0.5rem;
+
+        & img {
+            max-width: 240px;
+            max-height: 200px;
+            border-radius: 10px;
+        }
+    }
+}
+
+@media (min-width:650px) and (max-width:1199px) {
+
+    /* Aplica media querys para formato Tablet del HEADER desde 650px a 1199px */
+    .header {
+        @include flex(row,space-between,center);
+
+        /* Ubica logo a la izquierda */
+        &__img {
+            justify-content: flex-start;
+            grid-row: span 2;
+            padding: 1em 0;
+
+            & img {
+                max-width: 240px;
+                max-height: 180px;
+            }
+        }
+
+        /* Barra de Navegación Horizontal */
+        &__nav {    
+            
+            @include flex(row,center,flex-end);
+
+            .header-nav__list {
+                display: flex;
+                gap: 10px;
+            }
+        }
+
+        .navbar {
+            display:none;
+        }
+    }
+}
+
+/* Aplica media querys para formato Desktop del HEADER desde 1200px en adelante */
+@media (min-width:1200px) {
+
+    /* Header con FlexBox */
+    .header {
+        @include flex(row,space-between,center);
+        
+        /* Tamaño Logo */
+        &__img {
+            display: flex;
+            justify-content: flex-start;
+            align-items:center;
+
+            & img {
+                max-width: 240px;
+                max-height: 180px;
+            }
+        }
+
+        /* Barra de Navegación Horizontal */
+        &__nav {
+           
+            @include flex(row,center,flex-end);
+
+            .header-nav__list {
+                display: flex;
+                padding-right: 1em;
+                font-size: 1.2rem;
+                gap: 25px;
+            }
+        }
+
+        .navbar {
+            display:none;
+        }
+    }
+}

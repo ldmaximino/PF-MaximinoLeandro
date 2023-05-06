@@ -1,0 +1,13 @@
+//primero el base
+@import "./base";
+
+//luego los components
+@import "./components/header";
+@import "./components/footer";
+
+//por último los pages
+@import "./pages/index";
+@import "./pages/producto";
+@import "./pages/servicios";
+@import "./pages/novedades";
+@import "./pages/contacto";

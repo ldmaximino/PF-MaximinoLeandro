@@ -1,0 +1,228 @@
+/* ---------------------------------------------------------- INDEX ------------------------------------------------- */
+
+.index-main {
+    &__seccioncarousel {
+        /* Sección carousel */
+        width: 100vw;
+        margin: 1vw 0vw;
+        background-color: $fontcolor4;
+        font-size: 1.5rem;
+        color: $fontcolor7;
+        
+        &-imagen {
+            opacity: 1;
+        }
+
+        .carousel-item {
+            height: 500px;
+
+            & .container {
+                width: 100%;
+                height: 100%;
+                @include flex(column,center,center);
+
+                .carousel-caption {
+                    top: 2px;
+
+                    & h2 {
+                        color:$fontcolor16;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                    }
+
+                    & p {
+                        color:$fontcolor5;
+                        font-size: 1rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .carousel-control-prev-icon {
+            background-color: $fontcolor16;
+
+            &:hover {
+                background-color:$fontcolor5;
+            }
+        }
+
+        .carousel-control-next-icon {
+            background-color:$fontcolor16;
+
+            &:hover {
+                background-color: $fontcolor5;
+            }
+        }
+
+        .carousel-indicators .active {
+            background-color: $fontcolor16;
+        }
+    }
+
+    &__nuestrahistoria {
+        /* Sección Nuestra Historia */
+        margin: 0em 2em;
+        padding: 2em;
+        max-width: 550;
+        font-family: $fontfam1;
+        font-size: 1rem;
+        color: $fontcolor7;
+        text-align: center;
+        line-height: 2em;
+
+        &-titulo {
+            font-family: $fontfam1;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: $fontcolor17;
+            text-align: center;
+            line-height: 2em;
+        }
+    }
+
+    &__nuestroequipo {
+        background-image: radial-gradient(rgba(162, 213, 162, 0.603),white);
+
+        h2 {
+            /* Sección Nuestro Equipo */
+            color: $fontcolor17;
+            font-size: 2.5rem;
+            font-family: $fontfam3;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+    }
+
+    &__grupo {
+
+        & h3 {
+            margin-top: 0.5em;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        & h4 {
+            font-size: 1rem;
+            color: $fontcolor18;
+        }
+
+        &-fotos {
+            color: $fontcolor17;
+            font-size: 1.5rem;
+            font-family: $fontfam3;
+            text-align: center;
+            margin-bottom: 1em;
+
+            & img {
+                max-height: 90px;
+                max-width: 90px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &__grupo2 {
+        & h3 {
+            margin-top: 0.5em;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        & h4 {
+            font-size: 1rem;
+            color: $fontcolor18;
+        }
+
+        &-fotos {
+            color: $fontcolor17;
+            font-size: 1.5rem;
+            font-family: $fontfam3;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        & img {
+            max-height: 90px;
+            max-width: 90px;
+            border-radius: 50%
+        }
+    }
+}
+
+/* Aplica media querys para formato Tablet del INDEX desde 650px a 1199px */
+@media (min-width:650px) and (max-width:1199px) {
+    .index-main {
+
+        &__seccioncarousel {
+            .carousel-item {
+                height:500px;
+                
+                .container {
+                    width:80%;
+                    padding-top:11em;
+                }
+            }
+        }
+        &__seccioncarousel-imagen {
+            width: 990px;
+            height: 500px;
+        }
+
+        &__nuestrahistoria {
+            max-width: 1100px;
+            margin: 0em 1em;
+            padding: 0 2em;
+
+            &-titulo {
+                font-size: 2rem;
+            }
+        }
+
+        &__grupo {
+            @include flex(row,space-around,center);
+        }
+
+        &__grupo2 {
+            @include flex(row,space-around,center);
+        }
+    }
+}
+
+/* Aplica media querys para formato Desktop del INDEX desde 1200px en adelante */
+@media (min-width:1200px) {
+    .index-main {
+
+        &__seccioncarousel {
+            .carousel-item {
+                height:500px;
+                
+                .container {
+                    width:80%;
+                    padding-top:11em;
+                }
+            }
+        }
+
+        &__seccioncarousel-imagen {
+            width: 1350px;
+            height: 540px;
+        }
+
+        &__nuestrahistoria {
+            margin: 0em 4em;
+
+            &-titulo {
+                font-size: 2.5rem;
+            }
+        }
+
+        &__grupo {
+            @include flex(row,space-around,center);
+        }
+
+        &__grupo2 {
+            @include flex(row,space-around,center);
+        }
+    }
+}
