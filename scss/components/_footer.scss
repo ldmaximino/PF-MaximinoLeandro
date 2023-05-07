@@ -1,10 +1,10 @@
 /* ---------------------------------------------------------- FOOTER ------------------------------------------------- */
 /* Define el color del título del footer */
 .footer {
-    width: 98vw;
-    margin-left:0.1em;
-    color: $fontcolor4;
-    background-color:$fontcolor9;
+    color: map-get($tema-head-foot, color-texto);
+    background-color: map-get($tema-head-foot,color-fondo);
+    width: map-get($tema-head-foot, ancho);
+    margin-left: map-get($tema-head-foot, margen-izq);
     border-top: 5px solid $fontcolor3;
 
     &__titulo {

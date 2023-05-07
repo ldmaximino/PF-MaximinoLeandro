@@ -80,3 +80,11 @@ p {
     justify-content: $justify;
     align-items: $align;
 }
+
+/* Mapa */
+$tema-head-foot: (
+    color-fondo: $fontcolor9,
+    color-texto: $fontcolor4,
+    ancho: 98vw,
+    margen-izq: 0.1em
+);

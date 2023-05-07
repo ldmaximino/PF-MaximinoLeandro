@@ -2,12 +2,12 @@
 /* Define el color de fuente y color de fondo del Header*/
 .header {
     @include flex(row,space-between,center);
+    color: map-get($tema-head-foot, color-texto);
+    background-color: map-get($tema-head-foot,color-fondo);
+    width: map-get($tema-head-foot, ancho);
+    margin-left: map-get($tema-head-foot, margen-izq);
     padding: 0.5em;
-    color: $fontcolor4;
-    background-color:$fontcolor9;
-    width: 98vw;
     height: 9rem;
-    margin-left:0.1em;
     border-bottom: 5px solid $fontcolor3;
 
     &__nav {
