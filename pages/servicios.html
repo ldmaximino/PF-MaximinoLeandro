@@ -60,6 +60,7 @@
     <script>
         /*Acá debería existir un IF que trabaje con las cookies así el modal que es de información, se muestre solo una vez */
         $(document).ready(function () {
+            $('#modal__nuevoservicio').modal({backdrop: 'static', keyboard: false})
             $('#modal__nuevoservicio').modal('show');
         });
     </script>
@@ -200,7 +201,7 @@
                             <div class="modal-body-texto">En los próximos días estaremos habilitando el servicio de atención al cliente a través de
                                 nuestro nuevo módulo de Gestión de Reclamos y Consultas. Si están interesados en adherirse al nuevo
                                 servicio lo pueden hacer escribiéndonos a 
-                                <a class="modal-body-a" href="mailto:info@automax.com.ar" rel="noopener noreferrer">info@automax.com.ar</a>
+                                <a href="mailto:info@automax.com.ar" rel="noopener noreferrer">info@automax.com.ar</a>
                             </div>
                             <div class="modal-body-img">
                                 <img src="../img/tablero.png" alt="Gestión de Reclamos y Consultas">
