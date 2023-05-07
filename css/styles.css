@@ -555,6 +555,7 @@ p {
   text-align: center;
   line-height: 2em;
   background-color: white;
+  background-image: radial-gradient(circle, rgba(255, 166, 0, 0.268), white);
 }
 .producto-main__modulos-titulo {
   /* Titulo Módulos Producto */
@@ -562,9 +563,10 @@ p {
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   font-size: 1.5rem;
-}
-.producto-main__modulos-img {
-  padding: 0.5em;
+  color: rgb(78, 75, 75);
+  text-align: center;
+  line-height: 2em;
+  margin-bottom: 1em;
 }
 .producto-main__modulos .accordion-button {
   background-color: rgb(220, 174, 106);
@@ -578,8 +580,15 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: justify;
+}
+.producto-main__modulos-img {
+  margin: 1em 0.6em 1em 0.1em;
+  background-image: radial-gradient(circle, rgba(255, 166, 0, 0.268), white);
+}
+.producto-main__modulos-descripcion {
+  text-align: justify;
+  background-image: radial-gradient(circle, rgba(255, 166, 0, 0.268), white);
 }
 
 @keyframes titulo-producto {
@@ -718,7 +727,13 @@ p {
   font-weight: bold;
   color: rgb(104, 101, 101);
 }
+.servicios__seccion .servicios__contenedor .new {
+  display: flex;
+}
 .servicios__seccion .servicios__contenedor .rotacion-img {
+  margin-top: 1.5em;
+  margin-left: 0.5em;
+  height: 30px;
   animation: rotar 4s infinite linear;
 }
 .servicios__seccion .servicios__contenedor .servicios__articulo-texto {
@@ -727,6 +742,34 @@ p {
 }
 .servicios__seccion-it {
   background-image: linear-gradient(to top, rgba(149, 238, 142, 0.256), white);
+}
+
+.servicios__modal .modal-content {
+  background-color: gray;
+}
+.servicios__modal .modal-title {
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: greenyellow;
+}
+.servicios__modal .modal-body-texto {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: justify;
+}
+.servicios__modal .modal-body-img {
+  text-align: center;
+  margin: 2em 0;
+}
+.servicios__modal .btn {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+  background-color: greenyellow;
+  border: 1px solid black;
 }
 
 @keyframes rotar {

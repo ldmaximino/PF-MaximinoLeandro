@@ -73,9 +73,6 @@
         line-height: 2em;
 
         &-titulo {
-            //font-family: $fontfam1;
-            //font-weight: 800;
-            //font-size: 1.5rem;
             @include formatofuente1($fontfam1,800,1.5rem);
             color: $fontcolor17;
             text-align: center;

@@ -111,25 +111,20 @@
         text-align: center;
         line-height: 2em;
         background-color: $fontcolor4;
+        background-image:radial-gradient(circle,rgba(255, 166, 0, 0.268),$fontcolor4);
 
         &-titulo {
             /* Titulo Módulos Producto */
             display:inline-block;
-            //font-family: $fontfam1;
-            //font-weight: 800;
-            //font-size: 1.5rem;
             @include formatofuente1($fontfam1,800,1.5rem);
-        }
-
-        &-img {
-            padding:0.5em;
+            color: $fontcolor17;
+            text-align: center;
+            line-height: 2em;
+            margin-bottom:1em;
         }
 
         .accordion-button {
             background-color:$fontcolor22;
-            //color:$fontcolor5;
-            //font-family: $fontfam4;
-            //font-weight: bold;
             @include formatofuente1($fontfam4,bold,null);
         }
 
@@ -138,8 +133,17 @@
         }
 
         .accordion-body {
-            @include flex(column,center,center);
-            text-align: center;
+            @include flex(column,center,justify);
+        }
+
+        &-img {
+            margin: 1em 0.6em 1em 0.1em;
+            background-image:radial-gradient(circle,rgba(255, 166, 0, 0.268),$fontcolor4);
+        }
+
+        &-descripcion {
+            text-align:justify;
+            background-image:radial-gradient(circle,rgba(255, 166, 0, 0.268),$fontcolor4);
         }
     }
 }

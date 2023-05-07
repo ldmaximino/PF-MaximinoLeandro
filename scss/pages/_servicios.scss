@@ -27,7 +27,14 @@
             color: $fontcolor20;
         }
 
+        .new {
+            display:flex;
+        }
+
         .rotacion-img {
+            margin-top: 1.5em;
+            margin-left: 0.5em;
+            height: 30px;
             animation: rotar 4s infinite linear;
         }
 
@@ -39,6 +46,36 @@
 
     &-it {
         background-image: linear-gradient(to top,rgba(149, 238, 142, 0.256),white);
+    }
+}
+
+.servicios__modal {
+
+    .modal-content {
+        background-color: gray;
+    }
+
+    .modal-title {
+        @include formatofuente1($fontfam3,bold,2rem);
+        color:$fontcolor3;
+    }
+
+    .modal-body-texto {
+        @include formatofuente1($fontfam2,bold,1rem);
+        text-align:justify;
+
+    }
+
+    .modal-body-img {
+        text-align: center;
+        margin: 2em 0;
+    }
+
+    .btn {
+        @include formatofuente1($fontfam1,bold,1rem);
+        color:$fontcolor5;
+        background-color:$fontcolor3;
+        border: 1px solid $fontcolor5;
     }
 }
 
