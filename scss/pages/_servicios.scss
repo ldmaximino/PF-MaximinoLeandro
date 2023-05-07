@@ -4,10 +4,11 @@
     padding: 0.5em;
 
     &-titulo {
-        color: $fontcolor17;
-        font-size: 2.5rem;
-        font-family: $fontfam3;
-        text-align: center;
+        color: map-get($titulo-seccion, color-texto);
+        font-size: map-get($titulo-seccion,tamano-texto);
+        font-family: map-get($titulo-seccion, familia-texto);
+        text-align: map-get($titulo-seccion, centrar-texto);
+        font-weight: map-get($titulo-seccion, grosor-texto);
     }
 
     .servicios__contenedor {
@@ -19,10 +20,15 @@
         }
 
         .servicios__titulo-secundario {
+            display:flex;
             padding: 1em 0 0 0;
             font-size: 1.5rem;
             font-weight: bold;
             color: $fontcolor20;
+        }
+
+        .rotacion-img {
+            animation: rotar 4s infinite linear;
         }
 
         .servicios__articulo-texto {
@@ -33,6 +39,16 @@
 
     &-it {
         background-image: linear-gradient(to top,rgba(149, 238, 142, 0.256),white);
+    }
+}
+
+@keyframes rotar {
+    0% {
+        transform:rotatex(0deg);
+    }
+
+    100% {
+        transform:rotatex(360deg);
     }
 }
 

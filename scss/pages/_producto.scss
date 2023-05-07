@@ -8,8 +8,9 @@
         text-align: center;
         line-height: 2em;
         background-color: $fontcolor4;
-        font-family: $fontfam1;
-        font-size: 0.9rem;
+        //font-family: $fontfam1;
+        //font-size: 0.9rem;
+        @include formatofuente1($fontfam1,200,0.9rem);
         color: $fontcolor7;
         background-image:radial-gradient(circle,rgba(255, 166, 0, 0.268),$fontcolor4);
 
@@ -18,9 +19,10 @@
             display:inline-block;
             padding: 0.2em 1em;
             border-radius: 10px;
-            font-family: $fontfam1;
-            font-weight: 800;
-            font-size: 2.5rem;
+            //font-family: $fontfam1;
+            //font-weight: 800;
+            //font-size: 2.5rem;
+            @include formatofuente1($fontfam1,800,2.5rem);
             color: $fontcolor4;
             background-color: $fontcolor1;
             line-height: 1.8em;
@@ -113,9 +115,10 @@
         &-titulo {
             /* Titulo Módulos Producto */
             display:inline-block;
-            font-family: $fontfam1;
-            font-weight: 800;
-            font-size: 1.5rem;
+            //font-family: $fontfam1;
+            //font-weight: 800;
+            //font-size: 1.5rem;
+            @include formatofuente1($fontfam1,800,1.5rem);
         }
 
         &-img {
@@ -124,9 +127,10 @@
 
         .accordion-button {
             background-color:$fontcolor22;
-            color:$fontcolor5;
-            font-family: $fontfam4;
-            font-weight: bold;
+            //color:$fontcolor5;
+            //font-family: $fontfam4;
+            //font-weight: bold;
+            @include formatofuente1($fontfam4,bold,null);
         }
 
         .collapsed {

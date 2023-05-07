@@ -9,10 +9,7 @@
     border-bottom: 4px solid $fontcolor3;
 
     &-datos {
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items:center;
+        @include flex(column,center,center);
 
         & i {
             color:$fontcolor3;
@@ -23,28 +20,21 @@
         padding: 0.5em 0;
 
         & input {
-            font-family: $fontfam2;
-            font-weight: 600;
-            font-size: 0.8rem;
+            @include formatofuente1($fontfam2,600,0.8rem);
             padding: 0 0.2em;
         }
 
         & select {
-            font-family: $fontfam2;
-            font-weight: 600;
-            font-size: 0.8rem;
+            @include formatofuente1($fontfam2,600,0.8rem);
         }
 
         & textarea {
-            font-family: $fontfam2;
-            font-weight: 600;
-            font-size: 0.8rem;
+            @include formatofuente1($fontfam2,600,0.8rem);
             padding: 0 0.2em;
         }
 
         & label {
-            font-family: $fontfam2;
-            font-weight: 600;
+            @include formatofuente1($fontfam2,600,1rem);
         }
 
         &:hover input {
@@ -79,8 +69,9 @@
     .btnenviar {
         background-color: $fontcolor3;
         color: $fontcolor5;
-        font-family: $fontfam2;
-        font-size: 0.7rem;
+        //font-family: $fontfam2;
+        //font-size: 0.7rem;
+        @include formatofuente1($fontfam2,null,0.7rem);
         padding: 0.3em 1em;
         margin-right: 1em;
         border: 3px solid $fontcolor11;
@@ -99,8 +90,9 @@
     .btnlimpiar {
         background-color: $fontcolor3;
         color: black;
-        font-family: $fontfam2;
-        font-size: 0.7rem;
+        //font-family: $fontfam2;
+        //font-size: 0.7rem;
+        @include formatofuente1($fontfam2,null,0.7rem);
         padding: 0.3em 1em;
         border: 3px solid $fontcolor11;
         border-radius:12px;
@@ -120,25 +112,20 @@
     background-color: $fontcolor13;
 
     .container {
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column,center,center);
         background-color: $fontcolor14;
     }
 
     & h2 {
         padding-top: 0.1em;
-        font-family: $fontfam1;
-        font-weight: 800;
-        font-size: 2rem;
+        //font-family: $fontfam1;
+        //font-weight: 800;
+        //font-size: 2rem;
+        @include formatofuente1($fontfam1,800,2rem);
     }
 
     &-redessoc {
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column,center,center);
         padding: 6em;
         font-size: 1.3rem;
         font-weight: bold;
@@ -157,10 +144,7 @@
     }
 
     &-domicilio {
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column,center,center);
         padding: 2em;
         font-size: 1.3rem;
         font-weight: bold;
@@ -188,21 +172,24 @@
     .contacto__msj {
         &-it {
             & input {
-                font-family: $fontfam2;
-                font-weight: 600;
+                //font-family: $fontfam2;
+                //font-weight: 600;
                 font-size: 1rem;
+                @include formatofuente1($fontfam2,600,1rem);
             }
 
             & select {
-                font-family: $fontfam2;
-                font-weight: 600;
-                font-size: 1rem;
+                //font-family: $fontfam2;
+                //font-weight: 600;
+                //font-size: 1rem;
+                @include formatofuente1($fontfam2,600,1rem);
             }
 
             & textarea {
-                font-family: $fontfam2;
-                font-weight: 600;
-                font-size: 1rem;
+                //font-family: $fontfam2;
+                //font-weight: 600;
+                //font-size: 1rem;
+                @include formatofuente1($fontfam2,600,1rem);
             }
 
             .input-style {
@@ -245,21 +232,24 @@
     .contacto__msj {
         &-it {
             & input {
-                font-family: $fontfam2;
-                font-weight: 600;
-                font-size: 1.2rem;
+                //font-family: $fontfam2;
+                //font-weight: 600;
+                //font-size: 1.2rem;
+                @include formatofuente1($fontfam2,600,1.2rem);
             }
 
             & select {
-                font-family: $fontfam2;
-                font-weight: 600;
-                font-size: 1.2rem;
+                //font-family: $fontfam2;
+                //font-weight: 600;
+                //font-size: 1.2rem;
+                @include formatofuente1($fontfam2,600,1.2rem);
             }
 
             & textarea {
-                font-family: $fontfam2;
-                font-weight: 600;
-                font-size: 1.2rem;
+                //font-family: $fontfam2;
+                //font-weight: 600;
+                //font-size: 1.2rem;
+                @include formatofuente1($fontfam2,600,1.2rem);
             }
 
             .input-style {
@@ -284,10 +274,7 @@
     }
 
     .container__2 {
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include flex(row,center,center);
     }
 
     .contacto__seccion2 {

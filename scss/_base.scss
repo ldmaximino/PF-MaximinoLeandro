@@ -81,10 +81,26 @@ p {
     align-items: $align;
 }
 
-/* Mapa */
+@mixin formatofuente1($fontfam, $fontweight,$fontsize) {
+    font-family: $fontfam;
+    font-weight: $fontweight;
+    font-size: $fontsize;
+}
+
+/* Maps */
+
 $tema-head-foot: (
     color-fondo: $fontcolor9,
     color-texto: $fontcolor4,
     ancho: 98vw,
     margen-izq: 0.1em
 );
+
+$titulo-seccion: (
+    color-texto: $fontcolor17,
+    tamano-texto: 2.5rem,
+    familia-texto: $fontfam3,
+    centrar-texto: center,
+    grosor-texto: bold
+);
+  
