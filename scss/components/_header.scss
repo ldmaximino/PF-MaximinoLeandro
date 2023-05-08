@@ -12,9 +12,7 @@
 
     &__nav {
         @include flex(row,space-between,center);
-        display:none;       
-        
-        
+        display:none;          
     }
     
     .navbar {

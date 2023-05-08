@@ -340,7 +340,6 @@ p {
   background-image: radial-gradient(rgba(162, 213, 162, 0.603), white);
 }
 .index-main__nuestroequipo h2 {
-  /* Sección Nuestro Equipo */
   font-family: "Georgia", "Times New Roman", Times, serif;
   font-weight: 200;
   font-size: 2.5rem;
@@ -470,7 +469,7 @@ p {
   font-family: "Open Sans", sans-serif;
   font-weight: 200;
   font-size: 0.9rem;
-  color: gray;
+  color: rgb(31, 29, 29);
   background-image: radial-gradient(circle, rgba(255, 166, 0, 0.268), white);
 }
 .producto-main__descripcion-titulo {
@@ -548,9 +547,9 @@ p {
   text-align: center;
 }
 .producto-main__articulos-texto p {
-  padding: 1em 0 0 0.5em;
-  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
   font-weight: 200;
+  font-size: 1rem;
   text-align: left;
 }
 .producto-main__modulos {
@@ -567,7 +566,7 @@ p {
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: rgb(78, 75, 75);
   text-align: center;
   line-height: 2em;
@@ -717,6 +716,7 @@ p {
   font-family: "Georgia", "Times New Roman", Times, serif;
   text-align: center;
   font-weight: bold;
+  background-image: radial-gradient(circle, rgba(149, 238, 142, 0.256), white);
 }
 .servicios__seccion .servicios__contenedor {
   margin-top: 2em;
@@ -747,37 +747,6 @@ p {
 }
 .servicios__seccion-it {
   background-image: linear-gradient(to top, rgba(149, 238, 142, 0.256), white);
-}
-
-.servicios__modal .modal-content {
-  background-color: gray;
-  margin-top: 2em;
-  margin-left: 0.8em;
-  width: 25em;
-}
-.servicios__modal .modal-title {
-  font-family: "Georgia", "Times New Roman", Times, serif;
-  font-weight: bold;
-  font-size: 2rem;
-  color: greenyellow;
-}
-.servicios__modal .modal-body-texto {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  text-align: justify;
-}
-.servicios__modal .modal-body-img {
-  text-align: center;
-  margin: 0.5em 0;
-}
-.servicios__modal .btn {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  color: black;
-  background-color: greenyellow;
-  border: 1px solid black;
 }
 
 @keyframes rotar {
@@ -830,6 +799,37 @@ p {
     margin: 2em 0;
   }
 }
+.servicios__modal .modal-content {
+  background-color: gray;
+  margin-top: 2em;
+  margin-left: 0.8em;
+  width: 25em;
+}
+.servicios__modal .modal-title {
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: greenyellow;
+}
+.servicios__modal .modal-body-texto {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: justify;
+}
+.servicios__modal .modal-body-img {
+  text-align: center;
+  margin: 0.5em 0;
+}
+.servicios__modal .btn {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+  background-color: greenyellow;
+  border: 1px solid black;
+}
+
 /* -------------------------------------------------------- NOVEDADES ----------------------------------------------- */
 .novedades-main__art {
   margin: 0.5em 1.3em 0.5em 1.3em;
@@ -839,16 +839,16 @@ p {
   background-color: white;
   font-family: "Open Sans", sans-serif;
   font-weight: 200;
-  font-size: 1rem;
-  color: gray;
+  font-size: 0.9rem;
+  color: rgb(31, 29, 29);
 }
-.novedades-main__art-titulo {
+.novedades-main__art-titu {
   color: rgb(78, 75, 75);
   font-size: 2.5rem;
   font-family: "Georgia", "Times New Roman", Times, serif;
   text-align: center;
   font-weight: bold;
-  padding-bottom: 1em;
+  background-image: radial-gradient(circle, rgba(149, 238, 142, 0.256), white);
 }
 
 /* Sección contenedor articulos */
@@ -864,7 +864,7 @@ p {
   font-weight: 200;
   font-size: 0.9rem;
   line-height: 1.5em;
-  color: gray;
+  color: rgb(31, 29, 29);
   /* Define título artículos */
 }
 .novedades-main__articulos-titulo {

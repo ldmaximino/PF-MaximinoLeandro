@@ -5,18 +5,16 @@
     text-align: center;
     line-height: 2em;
     background-color: $fontcolor4;
-    //font-family: $fontfam1;
-    //font-size: 1rem;
-    @include formatofuente1($fontfam1,200,1rem);
-    color: $fontcolor7;
+    @include formatofuente1($fontfam1,200,0.9rem);
+    color: $fontcolor9;
 
-    &-titulo {
+    &-titu {
         color: map-get($titulo-seccion, color-texto);
         font-size: map-get($titulo-seccion,tamano-texto);
         font-family: map-get($titulo-seccion, familia-texto);
         text-align: map-get($titulo-seccion, centrar-texto);
         font-weight: map-get($titulo-seccion, grosor-texto);
-        padding-bottom: 1em;
+        background-image:radial-gradient(circle,rgba(149, 238, 142, 0.256),$fontcolor4);
     }
 }
 
@@ -28,7 +26,7 @@
     @include flex(column,space-evenly,center);
     @include formatofuente1($fontfam1,200,0.9rem);
     line-height: 1.5em;
-    color: $fontcolor7;
+    color: $fontcolor9;
 
     /* Define título artículos */
     &-titulo {
@@ -100,8 +98,6 @@
 
         &-titulo {
             color: $fontcolor17;
-            //font-size: 2.5rem;
-            //font-family: $fontfam3;
             @include formatofuente1($fontfam3,200,2.5rem);
             text-align: center;
             padding-bottom: 1em;
@@ -133,8 +129,6 @@
         color: $fontcolor7;
 
         &-titulo {
-            //font-size: 2.5rem;
-            //font-family: $fontfam3;
             @include formatofuente1($fontfam3,200,2.5rem);
             color: $fontcolor17;
             text-align: center;

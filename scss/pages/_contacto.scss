@@ -69,8 +69,6 @@
     .btnenviar {
         background-color: $fontcolor3;
         color: $fontcolor5;
-        //font-family: $fontfam2;
-        //font-size: 0.7rem;
         @include formatofuente1($fontfam2,null,0.7rem);
         padding: 0.3em 1em;
         margin-right: 1em;
@@ -90,8 +88,6 @@
     .btnlimpiar {
         background-color: $fontcolor3;
         color: black;
-        //font-family: $fontfam2;
-        //font-size: 0.7rem;
         @include formatofuente1($fontfam2,null,0.7rem);
         padding: 0.3em 1em;
         border: 3px solid $fontcolor11;
@@ -118,9 +114,6 @@
 
     & h2 {
         padding-top: 0.1em;
-        //font-family: $fontfam1;
-        //font-weight: 800;
-        //font-size: 2rem;
         @include formatofuente1($fontfam1,800,2rem);
     }
 
@@ -173,23 +166,15 @@
     .contacto__msj {
         &-it {
             & input {
-                //font-family: $fontfam2;
-                //font-weight: 600;
                 font-size: 1rem;
                 @include formatofuente1($fontfam2,600,1rem);
             }
 
             & select {
-                //font-family: $fontfam2;
-                //font-weight: 600;
-                //font-size: 1rem;
                 @include formatofuente1($fontfam2,600,1rem);
             }
 
             & textarea {
-                //font-family: $fontfam2;
-                //font-weight: 600;
-                //font-size: 1rem;
                 @include formatofuente1($fontfam2,600,1rem);
             }
 
@@ -233,23 +218,14 @@
     .contacto__msj {
         &-it {
             & input {
-                //font-family: $fontfam2;
-                //font-weight: 600;
-                //font-size: 1.2rem;
                 @include formatofuente1($fontfam2,600,1.2rem);
             }
 
             & select {
-                //font-family: $fontfam2;
-                //font-weight: 600;
-                //font-size: 1.2rem;
                 @include formatofuente1($fontfam2,600,1.2rem);
             }
 
             & textarea {
-                //font-family: $fontfam2;
-                //font-weight: 600;
-                //font-size: 1.2rem;
                 @include formatofuente1($fontfam2,600,1.2rem);
             }
 

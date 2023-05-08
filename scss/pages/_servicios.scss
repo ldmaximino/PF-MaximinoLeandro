@@ -9,6 +9,7 @@
         font-family: map-get($titulo-seccion, familia-texto);
         text-align: map-get($titulo-seccion, centrar-texto);
         font-weight: map-get($titulo-seccion, grosor-texto);
+        background-image:radial-gradient(circle,rgba(149, 238, 142, 0.256),$fontcolor4);
     }
 
     .servicios__contenedor {
@@ -46,38 +47,6 @@
 
     &-it {
         background-image: linear-gradient(to top,rgba(149, 238, 142, 0.256),white);
-    }
-}
-
-.servicios__modal {
-
-    .modal-content {
-        background-color: gray;
-        margin-top:2em;
-        margin-left:0.8em;
-        width:25em;
-    }
-
-    .modal-title {
-        @include formatofuente1($fontfam3,bold,2rem);
-        color:$fontcolor3;
-    }
-
-    .modal-body-texto {
-        @include formatofuente1($fontfam2,bold,1rem);
-        text-align:justify;
-    }
-
-    .modal-body-img {
-        text-align: center;
-        margin: 0.5em 0;
-    }
-
-    .btn {
-        @include formatofuente1($fontfam1,bold,1rem);
-        color:$fontcolor5;
-        background-color:$fontcolor3;
-        border: 1px solid $fontcolor5;
     }
 }
 
@@ -135,5 +104,37 @@
             text-align: center;
             margin: 2em 0;
         }
+    }
+}
+
+.servicios__modal {
+
+    .modal-content {
+        background-color: gray;
+        margin-top:2em;
+        margin-left:0.8em;
+        width:25em;
+    }
+
+    .modal-title {
+        @include formatofuente1($fontfam3,bold,2rem);
+        color:$fontcolor3;
+    }
+
+    .modal-body-texto {
+        @include formatofuente1($fontfam2,bold,1rem);
+        text-align:justify;
+    }
+
+    .modal-body-img {
+        text-align: center;
+        margin: 0.5em 0;
+    }
+
+    .btn {
+        @include formatofuente1($fontfam1,bold,1rem);
+        color:$fontcolor5;
+        background-color:$fontcolor3;
+        border: 1px solid $fontcolor5;
     }
 }
