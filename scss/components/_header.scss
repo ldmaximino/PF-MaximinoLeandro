@@ -12,9 +12,11 @@
 
     &__nav {
         @include flex(row,space-between,center);
-        display:none;    
+        display:none;       
+        
+        
     }
-
+    
     .navbar {
         position: static;
         padding-right: 1em;
@@ -29,6 +31,10 @@
 
             .offcanvas-body {
                 background-color: $fontcolor9;
+
+                .navbar-nav {
+                    font-size:0.8rem;
+                }
             }
 
             .nav-link:hover {
