@@ -159,11 +159,12 @@
     }
 
     &-horario {
-        font-size: 0.8rem;
-        font-weight: bold;
+        @include formatofuente1($fontfam1,bold,0.8rem);
+        padding: 0 0.5em;
+        margin-bottom:0.5em;
         color: $fontcolor5;
         text-align:center;
-        background-color: $fontcolor15;
+        border: 2px solid $fontcolor9;
     }
 }
 
