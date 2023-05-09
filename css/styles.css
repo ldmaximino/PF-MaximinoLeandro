@@ -55,7 +55,7 @@ p {
   align-items: center;
   color: white;
   background-color: rgb(31, 29, 29);
-  width: 98vw;
+  width: 99.5%;
   margin-left: 0.1em;
   padding: 0.5em;
   height: 9rem;
@@ -175,7 +175,7 @@ p {
 .footer {
   color: white;
   background-color: rgb(31, 29, 29);
-  width: 98vw;
+  width: 99.5%;
   margin-left: 0.1em;
   border-top: 5px solid greenyellow;
 }
@@ -469,7 +469,7 @@ p {
   font-family: "Open Sans", sans-serif;
   font-weight: 200;
   font-size: 0.9rem;
-  color: rgb(31, 29, 29);
+  color: black;
   background-image: radial-gradient(circle, rgba(255, 166, 0, 0.268), white);
 }
 .producto-main__descripcion-titulo {
@@ -840,7 +840,7 @@ p {
   font-family: "Open Sans", sans-serif;
   font-weight: 200;
   font-size: 0.9rem;
-  color: rgb(31, 29, 29);
+  color: black;
 }
 .novedades-main__art-titu {
   color: rgb(78, 75, 75);
@@ -911,15 +911,7 @@ p {
     font-family: "Open Sans", sans-serif;
     font-weight: 200;
     font-size: 1rem;
-    color: gray;
-  }
-  .novedades-main__art-titulo {
-    color: rgb(78, 75, 75);
-    font-family: "Georgia", "Times New Roman", Times, serif;
-    font-weight: 200;
-    font-size: 2.5rem;
-    text-align: center;
-    padding-bottom: 1em;
+    color: black;
   }
   /* Sección contenedor articulos */
   .novedades-main__articulos {
@@ -946,15 +938,7 @@ p {
     font-family: "Open Sans", sans-serif;
     font-weight: 200;
     font-size: 1rem;
-    color: gray;
-  }
-  .novedades-main__art-titulo {
-    font-family: "Georgia", "Times New Roman", Times, serif;
-    font-weight: 200;
-    font-size: 2.5rem;
-    color: rgb(78, 75, 75);
-    text-align: center;
-    padding-bottom: 1em;
+    color: black;
   }
   /* Sección contenedor articulos */
   .novedades-main__articulos {
@@ -973,7 +957,8 @@ p {
 }
 /* --------------------------------------------------------- CONTACTO ------------------------------------------------ */
 .contacto__msj {
-  width: 100%;
+  width: 99.5%;
+  margin-left: 0.1em;
   padding: 1em;
   background-image: url("../img/fondocontacto.jpg");
   background-position: center;
@@ -1074,6 +1059,8 @@ p {
 }
 
 .contacto__seccion2 {
+  width: 99.5%;
+  margin-left: 0.1em;
   background-color: rgba(92, 121, 97, 0.623);
 }
 .contacto__seccion2 .container {

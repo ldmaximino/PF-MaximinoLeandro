@@ -1,6 +1,7 @@
 /* --------------------------------------------------------- CONTACTO ------------------------------------------------ */
 .contacto__msj {
-    width: 100%;
+    width: 99.5%;
+    margin-left:0.1em;
     padding: 1em;
     background-image: url("../img/fondocontacto.jpg");
     background-position: center;
@@ -105,6 +106,8 @@
 }
 
 .contacto__seccion2 {
+    width:99.5%;
+    margin-left:0.1em;
     background-color: $fontcolor13;
 
     .container {

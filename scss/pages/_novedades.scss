@@ -6,7 +6,7 @@
     line-height: 2em;
     background-color: $fontcolor4;
     @include formatofuente1($fontfam1,200,0.9rem);
-    color: $fontcolor9;
+    color: $fontcolor5;
 
     &-titu {
         color: map-get($titulo-seccion, color-texto);
@@ -94,15 +94,7 @@
         line-height: 2em;
         background-color: $fontcolor4;
         @include formatofuente1($fontfam1,200,1rem);
-        color: $fontcolor7;
-
-        &-titulo {
-            color: $fontcolor17;
-            @include formatofuente1($fontfam3,200,2.5rem);
-            text-align: center;
-            padding-bottom: 1em;
-        }
-
+        color: $fontcolor5;
     }
 
     /* Sección contenedor articulos */
@@ -126,14 +118,7 @@
         line-height: 2em;
         background-color: $fontcolor4;
         @include formatofuente1($fontfam1,200,1rem);
-        color: $fontcolor7;
-
-        &-titulo {
-            @include formatofuente1($fontfam3,200,2.5rem);
-            color: $fontcolor17;
-            text-align: center;
-            padding-bottom: 1em;
-        }
+        color: $fontcolor5;
     }
 
     /* Sección contenedor articulos */

@@ -9,7 +9,7 @@
         line-height: 2em;
         background-color: $fontcolor4;
         @include formatofuente1($fontfam1,200,0.9rem);
-        color:$fontcolor9;
+        color:$fontcolor5;
         background-image:radial-gradient(circle,rgba(255, 166, 0, 0.268),$fontcolor4);
 
         &-titulo {
