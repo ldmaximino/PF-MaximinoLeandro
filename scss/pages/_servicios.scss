@@ -61,6 +61,38 @@
     }
 }
 
+.servicios__modal {
+
+    .modal-content {
+        background-color: gray;
+        margin-top:2em;
+        margin-left:3em;
+        width:25em;
+    }
+
+    .modal-title {
+        @include formatofuente1($fontfam3,bold,2rem);
+        color:$fontcolor3;
+    }
+
+    .modal-body-texto {
+        @include formatofuente1($fontfam2,bold,1rem);
+        text-align:justify;
+    }
+
+    .modal-body-img {
+        text-align: center;
+        margin: 0.5em 0;
+    }
+
+    .btn {
+        @include formatofuente1($fontfam1,bold,1rem);
+        color:$fontcolor5;
+        background-color:$fontcolor3;
+        border: 1px solid $fontcolor5;
+    }
+}
+
 /* Aplica media querys para formato Tablet de SERVICIOS desde 650px a 991px */
 @media (min-width:650px) and (max-width:991px) {
 
@@ -108,34 +140,4 @@
     }
 }
 
-.servicios__modal {
 
-    .modal-content {
-        background-color: gray;
-        margin-top:2em;
-        margin-left:0.8em;
-        width:25em;
-    }
-
-    .modal-title {
-        @include formatofuente1($fontfam3,bold,2rem);
-        color:$fontcolor3;
-    }
-
-    .modal-body-texto {
-        @include formatofuente1($fontfam2,bold,1rem);
-        text-align:justify;
-    }
-
-    .modal-body-img {
-        text-align: center;
-        margin: 0.5em 0;
-    }
-
-    .btn {
-        @include formatofuente1($fontfam1,bold,1rem);
-        color:$fontcolor5;
-        background-color:$fontcolor3;
-        border: 1px solid $fontcolor5;
-    }
-}

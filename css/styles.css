@@ -758,6 +758,37 @@ p {
     transform: rotatex(360deg);
   }
 }
+.servicios__modal .modal-content {
+  background-color: gray;
+  margin-top: 2em;
+  margin-left: 3em;
+  width: 25em;
+}
+.servicios__modal .modal-title {
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: greenyellow;
+}
+.servicios__modal .modal-body-texto {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: justify;
+}
+.servicios__modal .modal-body-img {
+  text-align: center;
+  margin: 0.5em 0;
+}
+.servicios__modal .btn {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+  background-color: greenyellow;
+  border: 1px solid black;
+}
+
 /* Aplica media querys para formato Tablet de SERVICIOS desde 650px a 991px */
 @media (min-width: 650px) and (max-width: 991px) {
   .servicios__contenedor {
@@ -800,37 +831,6 @@ p {
     margin: 2em 0;
   }
 }
-.servicios__modal .modal-content {
-  background-color: gray;
-  margin-top: 2em;
-  margin-left: 0.8em;
-  width: 25em;
-}
-.servicios__modal .modal-title {
-  font-family: "Georgia", "Times New Roman", Times, serif;
-  font-weight: bold;
-  font-size: 2rem;
-  color: greenyellow;
-}
-.servicios__modal .modal-body-texto {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  text-align: justify;
-}
-.servicios__modal .modal-body-img {
-  text-align: center;
-  margin: 0.5em 0;
-}
-.servicios__modal .btn {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  color: black;
-  background-color: greenyellow;
-  border: 1px solid black;
-}
-
 /* -------------------------------------------------------- NOVEDADES ----------------------------------------------- */
 .novedades-main__art {
   margin: 0.5em 1.3em 0.5em 1.3em;
