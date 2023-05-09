@@ -50,13 +50,14 @@
 
     <!-- Agrega los enlaces a las bibliotecas de jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    
     <!-- Animaciones CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
 
+    <!--
     <script>
         /*Acá debería existir un IF que trabaje con las cookies así el modal que es de información, se muestre solo una vez */
         $(document).ready(function () {
@@ -64,6 +65,16 @@
             $('#modal__nuevoservicio').modal('show');
         });
     </script>
+    -->
+    <script>
+        window.addEventListener("load", function() {
+            //Muestra el modal cuando se carga completamente la página
+            //Acá debería existir un IF que trabaje con las cookies así el modal que es de información, se muestre solo una vez */ 
+            $('#modal__nuevoservicio').modal({backdrop: 'static', keyboard: false})
+            $('#modal__nuevoservicio').modal('show');
+        });
+      </script>
+
 </head>
 
 <body>
@@ -120,7 +131,7 @@
     </header>
 
     <main>
-        <section class="servicios__seccion">
+         <section class="servicios__seccion">
             <h2 class="servicios__seccion-titulo animate__animated animate__backInRight">SERVICIOS</h2>
             <article class="servicios__contenedor">
 
@@ -188,8 +199,9 @@
                 </div>
             </article>
         </section>
+        
         <section class="servicios__modal">
-            <!-- Modal -->
+            <!--Modal-->
             <div class="modal fade" id="modal__nuevoservicio" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
@@ -214,6 +226,7 @@
                 </div>
             </div>
         </section>
+       
     </main>
 
     <footer class="footer">

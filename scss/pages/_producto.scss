@@ -60,13 +60,12 @@
     &__articulos-producto {
         /* Define formato artículos producto */
         width: 23em;
-        height: 15em;
+        height: 18em;
         padding: 1em;
         background-color: $fontcolor4;
         border: 0.1em solid $fontcolor5;
         border-radius: 10px;
-        display: flex;
-        align-items: flex-start;
+        @include flex(row,center,flex-start);
         text-align: justify;
         animation-name:articulos-producto;
         animation-iteration-count: infinite;
@@ -75,8 +74,7 @@
     }
 
     &__articulos-img {
-        flex-direction: row;
-        align-items: flex-start;
+        
         min-width: 6em;
     }
 
